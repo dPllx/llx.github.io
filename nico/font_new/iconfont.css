@@ -358,3 +358,16 @@
   	width: 120%;
   	}
 }
+
+
+
+@media (max-width: 480px) {
+  	.col-nico{
+	width: 85%;	
+  	}
+  }
+  @media (min-width: 767px) {
+  	.col-nico{
+  	width: 30.3333%;
+  	}
+}
