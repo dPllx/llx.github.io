@@ -1,862 +1,575 @@
-<!doctype html>
-<html>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	
+	<meta charset="utf-8">
+	<title>尼尔医康美集团</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta name="description" content="">
+	<meta name="author" content="">
+	
+	<link rel="shortcut icon" href="images/favicon.ico">
+    
+	<!-- CSS -->
+	<link href="css/bootstrap.min.css" rel="stylesheet" type="text/css" />
+	<link href="css/flexslider.css" rel="stylesheet" type="text/css" />
+	<link href="css/prettyPhoto.css" rel="stylesheet" type="text/css" />
+	<link href="css/animate.css" rel="stylesheet" type="text/css" media="all" />
+    <link href="css/owl.carousel.css" rel="stylesheet">
+	<link href="css/style.css" rel="stylesheet" type="text/css" />
+	<link rel="stylesheet" href="nico/font_new/iconfont.css" />
+    
+	<!-- FONTS -->
+	<!-- 	 -->
+	<link href="http://netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.css" rel="stylesheet">	
+	
+	
+	<!-- SCRIPTS -->
+	<!--[if IE]><script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script><![endif]-->
+    <!--[if IE]><html class="ie" lang="en"> <![endif]-->
+	
+	<script src="js/jquery.min.js" type="text/javascript"></script>
+	<script src="js/bootstrap.min.js" type="text/javascript"></script>
+	<script src="js/jquery.prettyPhoto.js" type="text/javascript"></script>
+	<script src="js/jquery.nicescroll.min.js" type="text/javascript"></script>
+	<script src="js/superfish.min.js" type="text/javascript"></script>
+	<script src="js/jquery.flexslider-min.js" type="text/javascript"></script>
+	<script src="js/owl.carousel.js" type="text/javascript"></script>
+	<script src="js/animate.js" type="text/javascript"></script>
+	<script src="js/jquery.BlackAndWhite.js"></script>
+	<script src="js/myscript.js" type="text/javascript"></script>
+	<script>
+		
+		//PrettyPhoto
+		jQuery(document).ready(function() {
+			$("a[rel^='prettyPhoto']").prettyPhoto();
+		});
+		
+		//BlackAndWhite
+		$(window).load(function(){
+			$('.client_img').BlackAndWhite({
+				hoverEffect : true, // default true
+				// set the path to BnWWorker.js for a superfast implementation
+				webworkerPath : false,
+				// for the images with a fluid width and height 
+				responsive:true,
+				// to invert the hover effect
+				invertHoverEffect: false,
+				// this option works only on the modern browsers ( on IE lower than 9 it remains always 1)
+				intensity:1,
+				speed: { //this property could also be just speed: value for both fadeIn and fadeOut
+					fadeIn: 300, // 200ms for fadeIn animations
+					fadeOut: 300 // 800ms for fadeOut animations
+				},
+				onImageReady:function(img) {
+					// this callback gets executed anytime an image is converted
+				}
+			});
+		});
+		
+	</script>
+	
+</head>
+<body>
 
-	<head>
-		<meta charset="utf-8">
-		<meta name="viewport" content="width=device-width, maximum-scale=1">
-		<title>欢迎来到我的个人网站</title>
-		<link rel="icon" href="favicon.png" type="image/png">
-		<link href="css/bootstrap.min.css" rel="stylesheet" type="text/css">
-		<link rel="stylesheet" href="js/fancybox/jquery.fancybox.css" type="text/css" media="screen" />
-		<link href="css/style.css" rel="stylesheet" type="text/css">
-		<link href="css/font-awesome.css" rel="stylesheet" type="text/css">
-		<link href="css/animate.css" rel="stylesheet" type="text/css">
+<!-- PRELOADER -->
+<img id="preloader" src="images/preloader.gif" alt="" />
+<!-- //PRELOADER -->
+<div class="preloader_hide">
 
-		<!--[if lt IE 9]>
-    <script src="js/respond-1.1.0.min.js"></script>
-    <script src="js/html5shiv.js"></script>
-    <script src="js/html5element.js"></script>
-<![endif]-->
-
-	</head>
-
-	<body>
-
-		<!--Hero_Section-->
-		<section id="hero_section" class="top_cont_outer">
-			<div class="hero_wrapper">
-
-				<div class="card hovercard">
-					<div class="cardheader">
-
-					</div>
-					<div class="avatar">
-						<img alt="" src="img/profile-pic.jpg">
-					</div>
-					<div class="info">
-						<div class="title">
-							<a>Hello,我叫</a>
-							<a target="_blank" href="javascript:;">林柳旬</a>
-						</div>
-						<div class="desc"><b style="font-size: 14px;">网页设计/平面设计</b></div>
-						<div class="desc">
-							<p style="font-size: 12px;">
-								从事过平面设计，网页设计，熟悉Web设计规范和用户界面设计，<br/>喜欢互联网，喜欢研究用户界面；
-								<br/>也熟悉线下物料。
-							</p>
-						</div>
-						<div class="desc"></div>
-					</div>
-					<div class="bottom">
-						<div class="underline"></div>
-						<ul class="social_links">
-							<li class="twitter animated bounceIn wow delay-02s animated" style="visibility: visible; animation-name: bounceIn;">
-								<a href="javascript:void(0)"><i class="fa"></i>码农</a>
-							</li>
-							<!--fa-twitter--->
-							<li class="facebook animated bounceIn wow delay-03s animated" style="visibility: visible; animation-name: bounceIn;">
-								<a href="javascript:void(0)"><i class="fa "></i>PS</a>
-							</li>
-							<!--fa-facebook--->
-							<li class="pinterest animated bounceIn wow delay-04s animated" style="visibility: visible; animation-name: bounceIn;">
-								<a href="javascript:void(0)"><i class="fa ">AI</i></a>
-							</li>
-							<ul class="social_links">
-							<!---fa-pinterest--->
-							<li class="gplus animated bounceIn wow delay-05s animated" style="visibility: visible; animation-name: bounceIn;">
-								<a href="javascript:void(0)"><i class="fa ">UI</i></a>
-							</li>
-							<!--fa-fa-google-plus--->
-							<li class="gplus animated bounceIn wow delay-05s animated" style="visibility: visible; animation-name: bounceIn;">
-								<a href="javascript:void(0)"><i class="fa ">HTML</i></a>
-							</li>
-							<!--fa-fa-google-plus--->
-							<li class="gplus animated bounceIn wow delay-05s animated" style="visibility: visible; animation-name: bounceIn;">
-								<a href="javascript:void(0)"><i class="fa ">C4D</i></a>
-							</li>
-							<!--fa-fa-google-plus--->
-						</ul>
-					</div>
-				</div>
-
-				<!--<div class="container" style="display:none">
-      <div class="hero_section">
-        <div class="row">
-          <div class="col-md-12">
-		   
-            <div class="top_left_cont intro zoomIn wow animated"> 
-              <h2>Hi! I’m Sam Doe<br> <strong>UX DESIGNER</strong></h2>
-              <p>
-			  I am from planet with a passion of Web, Graphic and Interactive design. <br/>
-			  I specialise in standards compliant websites with a focus on usability. <br/>
-              Enthusiastic about life, design and innovation. </p>
-                <div class="underline"></div>             
-              <ul class="social_links">
-            <li class="twitter animated bounceIn wow delay-02s animated" style="visibility: visible; animation-name: bounceIn;"><a href="javascript:void(0)"><i class="fa fa-twitter"></i></a></li>
-            <li class="facebook animated bounceIn wow delay-03s animated" style="visibility: visible; animation-name: bounceIn;"><a href="javascript:void(0)"><i class="fa fa-facebook"></i></a></li>
-            <li class="pinterest animated bounceIn wow delay-04s animated" style="visibility: visible; animation-name: bounceIn;"><a href="javascript:void(0)"><i class="fa fa-pinterest"></i></a></li>
-            <li class="gplus animated bounceIn wow delay-05s animated" style="visibility: visible; animation-name: bounceIn;"><a href="javascript:void(0)"><i class="fa fa-google-plus"></i></a></li> 
-          </ul> </div>
-          </div> 
-        </div>
-      </div>
-    </div>-->
-			</div>
-		</section>
-		<!--Hero_Section-->
-
-		<!--Header_section-->
-		<header id="header_wrapper">
-			<div class="container">
-				<div class="header_box">
-					<!--  <div class="logo"><a href="#"><img src="img/logo.png" alt="logo"></a></div>-->
-					<nav class="navbar navbar-inverse" role="navigation">
-						<div class="navbar-header">
-							<button type="button" id="nav-toggle" class="navbar-toggle" data-toggle="collapse" data-target="#main-nav"> <span class="sr-only">Toggle navigation</span> <span class="icon-bar"></span> <span class="icon-bar"></span> <span class="icon-bar"></span> </button>
-						</div>
-						<div id="main-nav" class="collapse navbar-collapse navStyle">
-							<ul class="nav navbar-nav" id="mainNav">
-								<li class="active">
-									<a href="#hero_section" class="scroll-link">首页</a>
+	<!-- PAGE -->
+	<div id="page">
+	
+		<!-- HEADER -->
+		<header>
+			
+			<!-- MENU BLOCK -->
+			<div class="menu_block">
+			
+				<!-- CONTAINER -->
+				<div class="container clearfix">
+					
+					<!-- Logo -->
+					<div class="logo logo_b">                                             
+					    <a href="index.html" style="text-decoration:none;" >
+							<i class="iconfont icon-nico-logo" id="logo-iconn"></i>
+							<ul class="logo_lili logo_lili-02">
+								<li>
+									<a href="index.html" style="text-decoration:none;"><h3>新加坡尼尔医康美集团</h3></a>
 								</li>
 								<li>
-									<a href="#aboutUs" class="scroll-link">关于我</a>
-								</li>
-								<li>
-									<a href="#service" class="scroll-link">知识</a>
-								</li>
-								<li>
-									<a href="#experience" class="scroll-link">工作经验</a>
-								</li>
-								<li>
-									<a href="#Portfolio" class="scroll-link">作品</a>
-								</li>
-								<!--  <li><a href="#team" class="scroll-link">Testimonial</a></li>-->
-								<li>
-									<a href="#contact" class="scroll-link">联系方式</a>
+									<a  href="index.html" style="text-decoration:none;"><span>NICO Healthcare Group Singapore</span></a>
 								</li>
 							</ul>
+						</a>
+					</div><!-- /logo -->  
+					
+					
+					
+					<!-- LOGO -->
+					<!-- <div class="logo pull-left">
+						<a href="index.html" ><span class="b1">w</span><span class="b2">h</span><span class="b3">i</span><span class="b4">t</span><span class="b5">e</span></a>
+					</div> --><!-- //LOGO -->
+					
+					<!-- SEARCH FORM
+					<div id="search-form" class="pull-right">
+						<form method="get" action="#">
+							<input type="text" name="Search" value="Search" onFocus="if (this.value == 'Search') this.value = '';" onBlur="if (this.value == '') this.value = 'Search';" />
+						</form>
+					</div> SEARCH FORM -->
+					
+					<!-- MENU -->
+					<div class="pull-right">
+						<nav class="navmenu center">
+							<ul>
+								<!-- <li class="first active scroll_btn"><a href="#home" >首页</a></li> -->
+								
+								<li class="sub-menu">
+									<a href="javascript:void(0);" >NICOHEALTHCARE</a>
+									<ul>
+										<li><a href="brand-01.html" >品牌简介</a></li>
+										<li><a href="brand-02.html" >品牌理念</a></li>
+										<li><a href="brand-03.html" >品牌优势</a></li>
+										<li><a href="brand-04.html" >认识总裁</a></li>
+									</ul>
+								</li>
+								
+								<li class="sub-menu">
+									<a href="javascript:void(0);" >产品</a>
+									<ul>
+										<li><a href="SELAVIE.html" >SELAVIE系列</a></li>
+										<li><a href="SMC-MAN.html" >SMC男士系列</a></li>
+										<li><a href="BEAUTE-SKIN.html" >BEAUTE护肤</a></li>
+										<li><a href="HEALTH.html" >HEALTH内养</a></li>
+										<li><a href="FOTIVA.html" >FOTIVA私护</a></li>
+										<li><a href="SLIMTEX.html" >SLIMTEX能量</a></li>
+									</ul>
+								</li>
+								
+								<li class="sub-menu">
+									<a href="javascript:void(0);" >文化</a>
+									<ul>
+										<li><a href="about-01.html" >时尚秀场</a></li>
+										<li><a href="about-02.html" >高端论坛</a></li>
+										<li><a href="about-03.html" >权威奖项</a></li>
+										<li><a href="about-04.html" >企业荣誉</a></li>
+										<li><a href="about-05.html" >企业历程</a></li>
+										<li><a href="about-06.html" >企业文化</a></li>
+									</ul>
+								</li>								
+								
+								<li class="scroll_btn last"><a href="#contacts" >联系我们</a></li>
+								
+							</ul>
+						</nav>
+					</div><!-- //MENU -->
+				</div><!-- //MENU BLOCK -->
+			</div><!-- //CONTAINER -->
+		</header><!-- //HEADER -->
+		
+		
+		<!-- HOME -->
+		<section id="home" class="padbot0">
+				
+			<!-- TOP SLIDER -->
+			<div class="flexslider top_slider">
+				<ul class="slides slides_li ban-ing nico-txt-0">
+					<li class="slide1 ban-ing1">
+						<div class="flex_caption1">
+							<p class="title1 captionDelay2 FromTop">NICO</p>
+							<p class="title2 captionDelay4 FromTop">Healthcare</p>
+							<p class="title3 captionDelay6 FromTop"></p>
+							<p class="title4 captionDelay7 FromBottom">打造中国首家大健康生态链闭环</p>
 						</div>
-					</nav>
-				</div>
-			</div>
-		</header>
-		<!--Header_section-->
-
-		<section id="aboutUs">
-			<!--Aboutus-->
-			<div class="inner_wrapper aboutUs-container fadeInLeft animated wow">
-				<div class="container">
-					<h2>关于我</h2>
-					<h6>Photoshop，PxCook，Adobe Illustrator，HTML+CSS，CorelDRAW</h6>
-					<div class="inner_section">
-						<div class="row">
-							<div class="col-lg-12 about-us">
-								<div class="row">
-									<div class="col-md-6">
-										<h3>我是一名网页设计师</h3>
-										<p>
-											从事过平面设计，网页设计，用户界面类工作，熟悉Web设计规范，喜欢互联网，喜欢研究用户界面。
-
-										</p>
-										<p>
-
-										</p>
-										<ul class="about-us-list">
-											<li class="points">能够熟练的操作Photoshop，Ai,PxCook等相关设计软件；</li>
-											<li class="points">2年平面设计经验，1年多网页设计经验，熟悉web设计规范；</li>
-											<li class="points">熟悉从设计稿到HTML制作过程，比如设计稿标注,开发文档等；</li>
-											<li class="points">熟悉HTML+CSS等页面布局，并制作出静态页面，可调式部分浏览器适配；</li>
-											<li class="points">性格开朗，耐心细致，善于沟通，有很强的责任心和团队合作精神。</li>
-										</ul>
-										<!-- /.about-us-list -->
-
-									</div>
-									<!-- /.col-md-6 -->
-
-									<div class="col-md-6">
-										<h3>专业技能分析</h3>
-										<p></p><br/><br/>
-										<div class="barWrapper">
-											<span class="progressText"><B>HTML5+CSS</B>-静态页面-代码搬运</span>
-											<div class="progress">
-												<div class="progress-bar" role="progressbar" aria-valuenow="55" aria-valuemin="0" aria-valuemax="100">
-													<span class="popOver" data-toggle="tooltip" data-placement="top" title="55%"> </span>
-												</div>
-											</div>
-
-											<div class="barWrapper">
-												<span class="progressText"><B>PS/PxCook</B>-设计稿-页面切图-页面标志-线下VI设计</span>
-												<div class="progress ">
-													<div class="progress-bar" role="progressbar" aria-valuenow="95" aria-valuemin="10" aria-valuemax="100" style="">
-														<span class="popOver" data-toggle="tooltip" data-placement="top" title="95%"> </span>
-													</div>
-
-												</div>
-											</div>
-
-											<div class="barWrapper">
-												<span class="progressText"><B>AI</B>-设计稿-页面切图-页面标志-线下VI设计</span>
-												<div class="progress">
-													<div class="progress-bar" role="progressbar" aria-valuenow="95" aria-valuemin="0" aria-valuemax="100">
-														<span class="popOver" data-toggle="tooltip" data-placement="top" title="95%"> </span>
-													</div>
-												</div>
-											</div>
-											<div class="barWrapper">
-												<span class="progressText"><B>JS</B>-修改JS-代码搬运</span>
-												<div class="progress">
-													<div class="progress-bar" role="progressbar" aria-valuenow="30" aria-valuemin="0" aria-valuemax="100">
-														<span class="popOver" data-toggle="tooltip" data-placement="top" title="30%"> </span>
-													</div>
-												</div>
-											</div>
-
-										</div>
-									</div>
-									<!-- /.col-md-6 -->
-								</div>
-								<!-- /.row -->
-							</div>
-							<!-- /.col-lg-12 -->
-						</div>
-
-					</div>
-				</div>
-			</div>
-		</section>
-		<!--Aboutus-->
-
-		<!--Service-->
-		<section id="service">
-			<div class="container">
-				<h2>知识</h2>
-				<h6>设计，代码，用户体验</h6>
-				<div class="service_wrapper">
-					<div class="row">
-						<div class="col-md-3">
-							<div class="service_icon icon3  delay-03s animated wow zoomIn"> <span><i class="fa fa-html5"></i></span> </div>
-							<div class="service_block">
-
-								<h3 class="animated fadeInUp wow">网页</h3>
-								<p class="animated fadeInDown wow">熟悉排版设计，色彩规律，<br/>前端代码HTML、CSS。</p>
-							</div>
-						</div>
-						<div class="col-md-3">
-							<div class="service_icon icon3  delay-03s animated wow zoomIn"> <span><i class="fa fa-user"></i></span> </div>
-							<div class="service_block">
-
-								<h3 class="animated fadeInUp wow">用户体验</h3>
-								<p class="animated fadeInDown wow">综合运用需求观察、深入研究<br/>优化用户体验，提升效率。</p>
-							</div>
-						</div>
-						<div class="col-md-3">
-							<div class="service_icon delay-03s animated wow  zoomIn"> <span><i class="fa fa-android"></i></span> </div>
-							<div class="service_block">
-
-								<h3 class="animated fadeInUp wow">Android</h3>
-								<p class="animated fadeInDown wow">了解安卓系统，<br/>喜欢研究安卓手机界面。</p>
-							</div>
-						</div>
-						<div class="col-md-3">
-							<div class="service_icon icon2  delay-03s animated wow zoomIn"> <span><i class="fa fa-apple"></i></span> </div>
-							<div class="service_block">
-								<h3 class="animated fadeInUp wow">Apple IOS</h3>
-								<p class="animated fadeInDown wow">了解苹果系统，<br/>喜欢研究苹果手机界面。</p>
-							</div>
-						</div>
-					</div>
-				</div>
-			</div>
-		</section>
-		<!--Service-->
-
-		<section id="experience" class="timeline">
-			<div class="container">
-				<h2>工作经验</h2>
-				<h6>汕头毕业，服装设计专业，实习期从事了平面设计，延续发展为现在的网页设计</h6>
-				<div class="qa-message-list" id="wallmessages">
-					<div class="message-item" id="m16">
-						<div class="message-inner">
-							<div class="message-head clearfix">
-								<div class="user-detail">
-									<h5 class="handle">平面设计助理</h5>
-									<div class="post-meta">
-										<div class="asker-meta">
-											<span class="qa-message-what"></span>
-											<span class="qa-message-when">
-												<span class="qa-message-when-data">2011</span>
-											</span>
-										</div>
-									</div>
-								</div>
-							</div>
-							<div class="qa-message-content">
-								刚毕业出来，学校安排的实习公司，主要负责线下物料设计。
-							</div>
-						</div>
-					</div>
-
-					<div class="message-item" id="m9">
-						<div class="message-inner">
-							<div class="message-head clearfix">
-								<div class="user-detail">
-									<h5 class="handle">联想公司销售专员</h5>
-									<div class="post-meta">
-										<div class="asker-meta">
-											<span class="qa-message-what"></span>
-											<span class="qa-message-when">
-												<span class="qa-message-when-data">2012</span>
-											</span>
-										</div>
-									</div>
-								</div>
-							</div>
-							<div class="qa-message-content">
-								亲戚介绍来了广州，进了联想电脑广州总分销公司，负责电脑销售业务。
-							</div>
-						</div>
-					</div>
-
-					<div class="message-item" id="m7">
-						<div class="message-inner">
-							<div class="message-head clearfix">
-								<div class="user-detail">
-									<h5 class="handle">平面设计师</h5>
-									<div class="post-meta">
-										<div class="asker-meta">
-											<span class="qa-message-what"></span>
-											<span class="qa-message-when">
-												<span class="qa-message-when-data">2013</span>
-											</span>
-										</div>
-									</div>
-								</div>
-							</div>
-							<div class="qa-message-content">
-								后来因为公司业务原因，从而离开了公司找回了平面设计，负责线下设计，活动策划等相关工作。
-							</div>
-						</div>
-					</div>
-
-					<div class="message-item" id="m6">
-						<div class="message-inner">
-							<div class="message-head clearfix">
-								<div class="user-detail">
-									<h5 class="handle">平面设计/网页设计</h5>
-									<div class="post-meta">
-										<div class="asker-meta">
-											<span class="qa-message-what"></span>
-											<span class="qa-message-when">
-												<span class="qa-message-when-data">2013-2015</span>
-											</span>
-										</div>
-									</div>
-								</div>
-							</div>
-							<div class="qa-message-content">
-								负责公司项目美化工作，公司网站设计，线下物料推广；参与公司项目修改及测试，并提出意见。
-							</div>
-						</div>
-					</div>
-
-					<div class="message-item" id="m5">
-						<div class="message-inner">
-							<div class="message-head clearfix">
-								<div class="user-detail">
-									<h5 class="handle">网页设计/平面设计</h5>
-									<div class="post-meta">
-										<div class="asker-meta">
-											<span class="qa-message-what"></span>
-											<span class="qa-message-when">
-												<span class="qa-message-when-data">2016-2017</span>
-											</span>
-										</div>
-									</div>
-								</div>
-							</div>
-							<div class="qa-message-content">
-								完善公司APP UI,网站设计；协助设计总监进行部门工作安排；负责公司部门之间设计需求工作。
-							</div>
-						</div>
-					</div>
-				</div>
-		</section>
-
-		<!-- Portfolio -->
-		<section id="Portfolio" class="content">
-
-			<!-- Container -->
-			<div class="container portfolio_title">
-
-				<!-- Title -->
-				<div class="section-title">
-					<h2>部分作品</h2>
-					<h6>Photoshop，PxCook，Adobe Illustrator，HTML+CSS，CorelDRAW</h6>
-
-				</div>
-				<!--/Title -->
-
-			</div>
-			<!-- Container -->
-
-			<div class="portfolio-top"></div>
-
-			<!-- Portfolio Filters -->
-			<div class="portfolio">
-
-				<div id="filters" class="sixteen columns">
-					<ul class="clearfix">
-						<li>
-							<a id="all" href="#" data-filter="*" class="active">
-								<h5>所有</h5>
-							</a>
-						</li>
-						<li>
-							<a class="" href="#" data-filter=".android">
-								<h5>Banner设计</h5>
-							</a>
-						</li>
-						<li>
-							<a class="" href="#" data-filter=".prototype">
-								<h5>网页设计</h5>
-							</a>
-						</li>
-						<li>
-							<a class="" href="#" data-filter=".design">
-								<h5>平面设计</h5>
-							</a>
-						</li>
-					</ul>
-				</div>
-				<!--/Portfolio Filters -->
-
-				<!-- Portfolio Wrapper -->
-				<div class="isotope fadeInLeft animated wow grid" style="position: relative; overflow: hidden; height: 480px;" id="portfolio_wrapper">
-
-					<!-- Portfolio Item-->
-					<figure style="position: absolute; left: 0px; top: 0px; transform: translate3d(337px, 0px, 0px) scale3d(1, 1, 1); width: 337px; opacity: 1;" class="portfolio-item one-four prototype appleIOS isotope-item effect-oscar">
-						<div class="portfolio_img"> <img src="img/portfolio_pic2.jpg" alt="Portfolio 1"> </div>
-						<figcaption>
-							<div>
-								<a href="img/portfolio_pic2.jpg" class="fancybox">
-									<h2>网页设计</h2>
-									<p>一个淘宝店面首页设计</p>
-								</a>
-							</div>
-						</figcaption>
-					</figure>
-					<!--/Portfolio Item -->
-
-					<!-- Portfolio Item -->
-					<figure style="position: absolute; left: 0px; top: 0px; transform: translate3d(674px, 0px, 0px) scale3d(1, 1, 1); width: 337px; opacity: 1;" class="portfolio-item one-four prototype appleIOS  isotope-item effect-oscar">
-						<div class="portfolio_img"> <img src="img/portfolio_pic3.jpg" alt="Portfolio 1"> </div>
-						<figcaption>
-							<div>
-								<a href="img/portfolio_pic3.jpg" class="fancybox">
-									<h2>网页设计</h2>
-									<p>一个摄影首页</p>
-								</a>
-							</div>
-						</figcaption>
-					</figure>
-					<!--/Portfolio Item-->
-
-					<!-- Portfolio Item-->
-					<figure style="position: absolute; left: 0px; top: 0px; transform: translate3d(1011px, 0px, 0px) scale3d(1, 1, 1); width: 337px; opacity: 1;" class="portfolio-item one-four  appleIOS  prototype web isotope-item effect-oscar">
-						<div class="portfolio_img"> <img src="img/portfolio_pic4.jpg" alt="Portfolio 1"> </div>
-						<figcaption>
-							<div>
-								<a href="img/portfolio_pic4.jpg" class="fancybox">
-									<h2>网页设计</h2>
-									<p>一个阿里巴巴专业版设计</p>
-								</a>
-							</div>
-						</figcaption>
-					</figure>
-					<!-- Portfolio Item -->
-
-					<!-- Portfolio Item -->
-					<figure style="position: absolute; left: 0px; top: 0px; transform: translate3d(0px, 240px, 0px) scale3d(1, 1, 1); width: 337px; opacity: 1;" class="portfolio-item one-four prototype appleIOS isotope-item effect-oscar">
-						<div class="portfolio_img"> <img src="img/portfolio_pic5.jpg" alt="Portfolio 1"> </div>
-						<figcaption>
-							<div>
-								<a href="img/portfolio_pic5.jpg" class="fancybox">
-									<h2>网页设计</h2>
-									<p>一个手机端网站设计，仿APP</p>
-								</a>
-							</div>
-						</figcaption>
-					</figure>
-					<!--/Portfolio Item -->
-
-					<!-- Portfolio Item -->
-					<figure style="position: absolute; left: 0px; top: 0px; transform: translate3d(337px, 240px, 0px) scale3d(1, 1, 1); width: 337px; opacity: 1;" class="portfolio-item one-four prototype web isotope-item effect-oscar">
-						<div class="portfolio_img"> <img src="img/portfolio_pic6.jpg" alt="Portfolio 1"> </div>
-						<figcaption>
-							<div>
-								<a href="img/portfolio_pic6.jpg" class="fancybox">
-									<h2>网页设计</h2>
-									<p>一个官网设计</p>
-								</a>
-							</div>
-						</figcaption>
-					</figure>
-					<!--/Portfolio Item -->
-
-					<!-- Portfolio Item  -->
-					<figure style="position: absolute; left: 0px; top: 0px; transform: translate3d(674px, 240px, 0px) scale3d(1, 1, 1); width: 337px; opacity: 1;" class="portfolio-item one-four  prototype web isotope-item effect-oscar">
-						<div class="portfolio_img"> <img src="img/portfolio_pic7.jpg" alt="Portfolio 1"> </div>
-						<figcaption>
-							<div>
-								<a href="img/portfolio_pic7.jpg" class="fancybox">
-									<h2>网页设计</h2>
-									<p>一个个人作品展示网站</p>
-								</a>
-							</div>
-						</figcaption>
-					</figure>
-					<!--/Portfolio Item -->
-					<!-- Portfolio Item  -->
-					<figure style="position: absolute; left: 0px; top: 0px; transform: translate3d(674px, 240px, 0px) scale3d(1, 1, 1); width: 337px; opacity: 1;" class="portfolio-item one-four  android web isotope-item effect-oscar">
-						<div class="portfolio_img"> <img src="img/portfolio_pic8.jpg" alt="Portfolio 1"> </div>
-						<figcaption>
-							<div>
-								<a href="img/portfolio_pic8.jpg" class="fancybox">
-									<h2>轮播图设计</h2>
-									<p>产品轮播图设计</p>
-								</a>
-							</div>
-						</figcaption>
-					</figure>
-					<!--/Portfolio Item -->
-					<!-- Portfolio Item  -->
-					<figure style="position: absolute; left: 0px; top: 0px; transform: translate3d(674px, 240px, 0px) scale3d(1, 1, 1); width: 337px; opacity: 1;" class="portfolio-item one-four  android web isotope-item effect-oscar">
-						<div class="portfolio_img"> <img src="img/portfolio_pic9.jpg" alt="Portfolio 1"> </div>
-						<figcaption>
-							<div>
-								<a href="img/portfolio_pic9.jpg" class="fancybox">
-									<h2>轮播图设计</h2>
-									<p>产品轮播图设计</p>
-								</a>
-							</div>
-						</figcaption>
-					</figure>
-					<!--/Portfolio Item -->
-					<!-- Portfolio Item -->
-					<figure style="position: absolute; left: 0px; top: 0px; transform: translate3d(1011px, 240px, 0px) scale3d(1, 1, 1); width: 337px; opacity: 1;" class="portfolio-item one-four design  isotope-item effect-oscar">
-						<div class="portfolio_img"> <img src="img/portfolio_pic16.jpg" alt="Portfolio 1"> </div>
-						<figcaption>
-							<div>
-								<a href="img/portfolio_pic16.jpg" class="fancybox">
-									<h2>平面设计</h2>
-									<p>一本菜谱封面设计</p>
-								</a>
-							</div>
-						</figcaption>
-					</figure>
-					<!--/Portfolio Item -->
-					<!-- Portfolio Item  -->
-					<figure style="position: absolute; left: 0px; top: 0px; transform: translate3d(674px, 240px, 0px) scale3d(1, 1, 1); width: 337px; opacity: 1;" class="portfolio-item one-four  android web isotope-item effect-oscar">
-						<div class="portfolio_img"> <img src="img/portfolio_pic10.jpg" alt="Portfolio 1"> </div>
-						<figcaption>
-							<div>
-								<a href="img/portfolio_pic10.jpg" class="fancybox">
-									<h2>轮播图设计</h2>
-									<p>产品轮播图设计</p>
-								</a>
-							</div>
-						</figcaption>
-					</figure>
-					<!--/Portfolio Item -->
-					<!-- Portfolio Item  -->
-					<figure style="position: absolute; left: 0px; top: 0px; transform: translate3d(674px, 240px, 0px) scale3d(1, 1, 1); width: 337px; opacity: 1;" class="portfolio-item one-four  android web isotope-item effect-oscar">
-						<div class="portfolio_img"> <img src="img/portfolio_pic11.jpg" alt="Portfolio 1"> </div>
-						<figcaption>
-							<div>
-								<a href="img/portfolio_pic11.jpg" class="fancybox">
-									<h2>轮播图设计</h2>
-									<p>产品轮播图设计</p>
-								</a>
-							</div>
-						</figcaption>
-					</figure>
-					<!--/Portfolio Item -->
-					<!-- Portfolio Item -->
-					<figure style="position: absolute; left: 0px; top: 0px; transform: translate3d(1011px, 240px, 0px) scale3d(1, 1, 1); width: 337px; opacity: 1;" class="portfolio-item one-four   design isotope-item effect-oscar">
-						<div class="portfolio_img"> <img src="img/portfolio_pic19.jpg" alt="Portfolio 1"> </div>
-						<figcaption>
-							<div>
-								<a href="img/portfolio_pic19.jpg" class="fancybox">
-									<h2>平面设计</h2>
-									<p>VI宣传单设计</p>
-								</a>
-							</div>
-						</figcaption>
-					</figure>
-					<!--/Portfolio Item -->
-					<!-- Portfolio Item -->
-					<figure style="position: absolute; left: 0px; top: 0px; transform: translate3d(1011px, 240px, 0px) scale3d(1, 1, 1); width: 337px; opacity: 1;" class="portfolio-item one-four   android isotope-item effect-oscar">
-						<div class="portfolio_img"> <img src="img/portfolio_pic12.jpg" alt="Portfolio 1"> </div>
-						<figcaption>
-							<div>
-								<a href="img/portfolio_pic12.jpg" class="fancybox">
-									<h2>轮播图设计</h2>
-									<p>产品轮播图设计</p>
-								</a>
-							</div>
-						</figcaption>
-					</figure>
-					<!--/Portfolio Item -->
-					<!-- Portfolio Item -->
-					<figure style="position: absolute; left: 0px; top: 0px; transform: translate3d(1011px, 240px, 0px) scale3d(1, 1, 1); width: 337px; opacity: 1;" class="portfolio-item one-four   android isotope-item effect-oscar">
-						<div class="portfolio_img"> <img src="img/portfolio_pic13.jpg" alt="Portfolio 1"> </div>
-						<figcaption>
-							<div>
-								<a href="img/portfolio_pic13.jpg" class="fancybox">
-									<h2>轮播图设计</h2>
-									<p>产品轮播图设计</p>
-								</a>
-							</div>
-						</figcaption>
-					</figure>
-					<!--/Portfolio Item -->
-					<!-- Portfolio Item -->
-					<figure style="position: absolute; left: 0px; top: 0px; transform: translate3d(1011px, 240px, 0px) scale3d(1, 1, 1); width: 337px; opacity: 1;" class="portfolio-item one-four   design isotope-item effect-oscar">
-						<div class="portfolio_img"> <img src="img/portfolio_pic14.jpg" alt="Portfolio 1"> </div>
-						<figcaption>
-							<div>
-								<a href="img/portfolio_pic14.jpg" class="fancybox">
-									<h2>平面设计</h2>
-									<p>VI名片设计</p>
-								</a>
-							</div>
-						</figcaption>
-					</figure>
-					<!--/Portfolio Item -->
-					<!-- Portfolio Item -->
-					<figure style="position: absolute; left: 0px; top: 0px; transform: translate3d(1011px, 240px, 0px) scale3d(1, 1, 1); width: 337px; opacity: 1;" class="portfolio-item one-four   prototype isotope-item effect-oscar">
-						<div class="portfolio_img"> <img src="img/portfolio_pic20.jpg" alt="Portfolio 1"> </div>
-						<figcaption>
-							<div>
-								<a href="img/portfolio_pic20.jpg" class="fancybox">
-									<h2>网页设计</h2>
-									<p>一个官网设计</p>
-								</a>
-							</div>
-						</figcaption>
-					</figure>
-					<!--/Portfolio Item -->
-					<!-- Portfolio Item -->
-					<figure style="position: absolute; left: 0px; top: 0px; transform: translate3d(1011px, 240px, 0px) scale3d(1, 1, 1); width: 337px; opacity: 1;" class="portfolio-item one-four   design isotope-item effect-oscar">
-						<div class="portfolio_img"> <img src="img/portfolio_pic15.jpg" alt="Portfolio 1"> </div>
-						<figcaption>
-							<div>
-								<a href="img/portfolio_pic15.jpg" class="fancybox">
-									<h2>平面设计</h2>
-									<p>VI名片设计</p>
-								</a>
-							</div>
-						</figcaption>
-					</figure>
-					<!--/Portfolio Item -->
-
-					<!-- Portfolio Item -->
-					<figure style="position: absolute; left: 0px; top: 0px; transform: translate3d(1011px, 240px, 0px) scale3d(1, 1, 1); width: 337px; opacity: 1;" class="portfolio-item one-four   design isotope-item effect-oscar">
-						<div class="portfolio_img"> <img src="img/portfolio_pic17.jpg" alt="Portfolio 1"> </div>
-						<figcaption>
-							<div>
-								<a href="img/portfolio_pic17.jpg" class="fancybox">
-									<h2>平面设计</h2>
-									<p>一本画册封面设计</p>
-								</a>
-							</div>
-						</figcaption>
-					</figure>
-					<!--/Portfolio Item -->
-					<!-- Portfolio Item -->
-					<figure style="position: absolute; left: 0px; top: 0px; transform: translate3d(1011px, 240px, 0px) scale3d(1, 1, 1); width: 337px; opacity: 1;" class="portfolio-item one-four   design isotope-item effect-oscar">
-						<div class="portfolio_img"> <img src="img/portfolio_pic18.jpg" alt="Portfolio 1"> </div>
-						<figcaption>
-							<div>
-								<a href="img/portfolio_pic18.jpg" class="fancybox">
-									<h2>平面设计</h2>
-									<p>VI宣传单设计</p>
-								</a>
-							</div>
-						</figcaption>
-					</figure>
-					<!--/Portfolio Item -->
-					<!-- Portfolio Item -->
-					<figure style="position: absolute; left: 0px; top: 0px; transform: translate3d(1011px, 240px, 0px) scale3d(1, 1, 1); width: 337px; opacity: 1;" class="portfolio-item one-four   prototype isotope-item effect-oscar">
-						<div class="portfolio_img"> <img src="img/portfolio_pic1.jpg" alt="Portfolio 1"> </div>
-						<figcaption>
-							<div>
-								<a href="img/portfolio_pic1.jpg" class="fancybox">
-									<h2>网页设计</h2>
-									<p>一个官网设计</p>
-								</a>
-							</div>
-						</figcaption>
-					</figure>
-					<!--/Portfolio Item -->
-				</div>
-				<!--/Portfolio Wrapper -->
-
-			</div>
-			<!--/Portfolio Filters -->
-
-			<div class="portfolio_btm"></div>
-
-			<div id="project_container">
-				<div class="clear"></div>
-				<div id="project_data"></div>
-			</div>
-
-		</section>
-		<!--/Portfolio -->
-
-		<!--<section class="page_section team" id="team"><!--main-section team-start
-  <div class="container">
-    <h2>Testimonial</h2>
-    <h6>Lorem ipsum dolor sit amet, consectetur adipiscing.</h6>
-	  	
-		<div id="team" name="team">
-  <div class="container">
-    <div class="row centered">
-      
-      <div class="col-md-3 centered"> <img class="img img-circle lt-box" src="img/team01.jpg" height="120px" width="120px" alt="">
-        <div class="rt-box"><h4><strong>Rosy Illue</strong></h4>
-        <p>Lorem ipsum dolor sit amet, consectetur Morbi sagittis, sem quisci ipsum gravida tortor.</p><br/>
-		</div>
-       </div>
-         <div class="col-md-3 centered"> <img class="img img-circle lt-box" src="img/team02.jpg" height="120px" width="120px" alt="">
-        <div class="rt-box"><h4><strong>Nissy Yukjk</strong></h4>
-        <p>Lorem ipsum dolor sit amet, consectetur Morbi sagittis, sem quisci ipsum gravida tortor.</p><br/>
-		</div>
-       </div>
-	      <div class="col-md-3 centered"> <img class="img img-circle lt-box" src="img/team03.jpg" height="120px" width="120px" alt="">
-        <div class="rt-box"><h4><strong>Fsdf Efffl</strong></h4>
-        <p>Lorem ipsum dolor sit amet, consectetur Morbi sagittis, sem quisci ipsum gravida tortor.</p><br/>
-		</div>
-       </div>
-	      <div class="col-md-3 centered"> <img class="img img-circle lt-box" src="img/team04.jpg" height="120px" width="120px" alt="">
-        <div class="rt-box"><h4><strong>Mnin Nulk</strong></h4>
-        <p>Lorem ipsum dolor sit amet, consectetur Morbi sagittis, sem quisci ipsum gravida tortor.</p><br/>
-		</div>
-       </div>
-   
-    </div>
-  </div>
-		<!-- row 
-		</div>
-		</div>
-		</section>-->
-		<!--/Team-->
-		<!--Footer-->
-		<footer class="footer_wrapper" id="contact">
-			<div class="container">
-				<section class="page_section contact" id="contact">
-					<div class="contact_section">
-						<h2>与我联系</h2>
-						<h6>只是留言窗口，还没实现数据接口</h6>
-
-					</div>
-					<div class="row">
-						<div class="col-lg-4 wow fadeInLeft">
-							<div class="contact_info">
-								<div class="detail">
-									<h4 style="font-weight: bold; font-size: 35px;">林柳旬</h4>
-									<p>广州市白云区梅花园</p>
-								</div>
-								<div class="detail">
-									<h4>我的电话</h4>
-									<p>185 2078 8173</p>
-								</div>
-								<div class="detail">
-									<h4>邮箱</h4>
-									<p>aqpio@qq.com</p>
-								</div>
-								<div class="lingyige">
-								<a href="https://dpllx.github.io/allx2.github.io/">
-									<span style="color: #fff;">
-										另一个首页网站
-									<span/>
-									<img src="img/weixin.png" >
-									
-								</a>
-							</div>
-							</div>
+						<a class="slide_btn FromRight" href="about-02.html">查看更多</a>
+					<li class="slide2 ban-ing1">
+						<div class="flex_caption1">
+							<p class="title1 captionDelay2 FromTop">健康</p>
+							<p class="title4 captionDelay7 FromBottom">是对爱你的人</p>
+							<p class="title2 captionDelay4 FromTop"></p>
+							<p class="title3 captionDelay6 FromTop">最大的责任</p>
 							
-							<!--<ul class="social_links">
-								<li class="twitter animated bounceIn wow delay-02s">
-									<a href="javascript:void(0)"><i class="fa fa-twitter"></i></a>
-								</li>
-								<li class="facebook animated bounceIn wow delay-03s">
-									<a href="javascript:void(0)"><i class="fa fa-facebook"></i></a>
-								</li>
-								<li class="pinterest animated bounceIn wow delay-04s">
-									<a href="javascript:void(0)"><i class="fa fa-pinterest"></i></a>
-								</li>
-								<li class="gplus animated bounceIn wow delay-05s">
-									<a href="javascript:void(0)"><i class="fa fa-google-plus"></i></a>
-								</li>
-							</ul>-->
 						</div>
-						<div class="col-lg-8 wow fadeInLeft delay-06s">
-							<!--NOTE: Update your email Id in "contact_me.php" file in order to receive emails from your contact form-->
+						<a class="slide_btn FromRight" href="SELAVIE.html" >查看更多</a>
+					</li>
+					<li class="slide3 ban-ing1">
+						<div class="flex_caption1">
+							<p class="title1 captionDelay2 FromTop">尼尔医康美</p>
+							<br><p class="title2 captionDelay4 FromTop">NicoHealthcare</p>
+							<p class="title3 captionDelay6 FromTop"></p>
+							<p class="title4 captionDelay7 FromBottom">企业31年&#8226;上市17年&#8226;医康美12年&#8226;上市号: 200104166D</p>
+						</div>
+						<a class="slide_btn FromRight" href="about-05.html" >查看更多</a>
+						<!-- VIDEO BACKGROUND -->
+						<a id="P2" class="player" data-property="{videoURL:'tDvBwPzJ7dY',containment:'.top_slider .slide3',autoPlay:true, mute:true, startAt:0, opacity:1}" ></a>
+						<!-- //VIDEO BACKGROUND -->
+					</li>
+				</ul>
+			</div>
+			<!-- <div id="carousel">
+				<ul class="slides">
+					<li><img src="images/slider/slide1_bg.jpg" alt="" /></li>
+					<li><img src="images/slider/slide2_bg.jpg" alt="" /></li>
+					<li><img src="images/slider/slide3_bg.jpg" alt="" /></li>
+				</ul>
+			</div> --><!-- //TOP SLIDER -->
+		</section><!-- //HOME -->
+		
+		
+		<!-- ABOUT -->
+		<section id="about">
+			
+			<!-- SERVICES -->
+			<div class="services_block padbot40" data-appear-top-offset="-200" data-animated="fadeInUp">
+				
+				<!-- CONTAINER -->
+				<div class="container">
+				
+					<!-- ROW -->
+					<div class="row">
+						<div class="col-lg-3 col-md-3 col-sm-6 col-xs-6 col-ss-12 margbot30">
+							<a class="services_item" href="javascript:void(0);" >
+								<p><b>尼尔</b>医康美</p>
+								<span>一家以进出口贸易、食品、护肤、外护为主打的美业品牌</span>
+							</a>
+						</div>
+						<div class="col-lg-3 col-md-3 col-sm-6 col-xs-6 col-ss-12 margbot30">
+							<a class="services_item" href="javascript:void(0);" >
+								<p><b>核心</b>竞争力</p>
+								<span>旗下产品主要聚焦以爱护健康、美丽人士为主，用自主研发及尼尔科技创新</span>
+							</a>
+						</div>
+						<div class="col-lg-3 col-md-3 col-sm-6 col-xs-6 col-ss-12 margbot30">
+							<a class="services_item" href="javascript:void(0);" >
+								<p><b>客户</b>为中心</p>
+								<span>提供品质的产品需求，满足消费者由内而外，由外而内的感受</span>
+							</a>
+						</div>
+						<!-- <div class="col-lg-3 col-md-3 col-sm-6 col-xs-6 col-ss-12 margbot30">
+							<a class="services_item" href="javascript:void(0);" >
+								<p><b>亮点</b> 标题</p>
+								<span>文字，精简，不用过于太多</span>
+							</a>
+						</div> -->
+					</div><!-- //ROW -->
+				</div><!-- //CONTAINER -->
+			</div><!-- //SERVICES -->
 
-							<form name="sentMessage" id="contactForm" novalidate>
-								<div class="control-group">
-									<div class="controls">
-										<input type="text" class="form-control" placeholder="名字" id="name" required data-validation-required-message="Please enter your name" />
-										<p class="help-block"></p>
-									</div>
+			<!-- CLEAN CODE -->
+			<div class="cleancode_block">
+				
+				<!-- CONTAINER -->
+				<div class="container" data-appear-top-offset="-200" data-animated="fadeInUp">
+					
+					<!-- CASTOM TAB -->
+					<div id="myTabContent" class="tab-content">
+						<div class="tab-pane fade in active clearfix" id="tab1">
+							<p class="title"><b>背景</b>优势</p>
+							<span>尼尔医康美所属新加坡尼尔集团。尼尔集团成立于1991年 ， 在2001年时候先后苏州工业园建立在华尼尔金属，尼尔电子，铭尔金属。
+							2005年于 新加坡股票行上市：上市号：200104166D。2021年在江苏南通继续投资7亿元建立 第二大工厂。
+							主要做高新科技、无人飞机、新能源相关开发。 企业拥有已经30多 年历史，上市17年，医康美12年。企业走稳定路线，给您安全感，实力与权威保障。</span>
+						</div>
+						<div class="tab-pane fade clearfix" id="tab2">
+							<p class="title"><b>研发</b>优势</p>
+							<span>尼尔医康美产品来自尼尔生物科技支持。无论从美体塑形、内养内调、 私密护理、微循环能量呵护，都拥有自主研发的能力，拥有400余项产权专利申请与保护。</span>
+						</div>
+						<div class="tab-pane fade clearfix" id="tab3">
+							<p class="title"><b>导师</b>优势</p>
+							<span>尼尔医康美以实体店入驻为主，旗下事业发展部拥有千名专业服务督导 老师组成，并且持国家认证的健康咨询师、管理师、美容师、营养师、虹膜咨询师证上岗。
+							为店 内输出技术专业、产品专业、人才培训、会议等多重成长计划，为消费者提供专业而有品质的品牌保障。</span>
+						</div>
+						<div class="tab-pane fade clearfix" id="tab4">
+							<p class="title"><b>商学院</b>优势</p>
+							<span>尼尔医康美拥有尼尔商学院，成立于2015年，坐落于广州。为所有旗下 加盟店、店员进行加盟品项的专业培训，包含了线下培训+线上培训，符合趋势发展，打造美业人才输出及保障创业。</span>
+						</div>
+						<div class="tab-pane fade clearfix" id="tab5">
+							<p class="title"><b>团队</b>优势</p>
+							<span>尼尔医康美拥有非常完善的团队员工做支撑。分为多个部门 系统运作，从创新、创意、服务、新媒体输出内容给与全方位的支撑。</span>
+						</div>
+						<div class="tab-pane fade clearfix" id="tab6">
+							<p class="title"><b>技术</b>优势</p>
+							<span>尼尔医康美拥有美学美体技术输出、虹膜自然疗法技术输出、 居家管理技术跟踪服务输出，以专业赢未来。</span>
+						</div>
+						<div class="tab-pane fade clearfix" id="tab7">
+							<p class="title"><b>闭环</b>优势</p>
+							<span>尼尔除了拥有以尼尔医康美为聚焦的美业品牌。还包含了精准医疗、 再生医美、生殖中心为主轴的大健康生态链闭环。
+							也是行业首创。站在消费者角度考虑需求 精准化、满意度；站在经营者角度考虑持久经营理念。</span>
+						</div>
+					</div>
+					<ul id="myTab" class="nav nav-tabs">
+						<li class="active"><a class="i1" href="#tab1" data-toggle="tab" ><i></i><span></span></a></li>
+						<li><a class="i2" href="#tab2" data-toggle="tab" ><i></i><span></span></a></li>
+						<li><a class="i3" href="#tab3" data-toggle="tab" ><i></i><span></span></a></li>
+						<li><a class="i4" href="#tab4" data-toggle="tab" ><i></i><span></span></a></li>
+						<li><a class="i5" href="#tab5" data-toggle="tab" ><i></i><span></span></a></li>
+						<li><a class="i6" href="#tab6" data-toggle="tab" ><i></i><span></span></a></li>
+						<li><a class="i7" href="#tab7" data-toggle="tab" ><i></i><span></span></a></li>
+					</ul><!-- CASTOM TAB -->
+				</div><!-- //CONTAINER -->
+			</div><!-- //CLEAN CODE -->
+			
+			<!-- MULTI PURPOSE -->
+			<div class="purpose_block">
+				
+				<!-- CONTAINER -->
+				<div class="container">
+					
+					<!-- ROW -->
+					<!-- <div class="row">
+					
+						<div class="col-lg-7 col-md-7 col-sm-7" data-appear-top-offset="-200" data-animated="fadeInLeft">
+							<h2><b>尼尔医康美，轻松享受健康，<br>美丽好生活</b></h2>
+							<p>NICO HEALTHCARE goodhealth Goodlife</p>
+							<p></p> -->
+							<!-- <a class="btn btn-active" href="javascript:void(0);" ><span data-hover="Yes I want it">Byu This theme</span></a>
+							<a class="btn" href="javascript:void(0);" >View more templates</a> -->
+						<!-- </div>
+						
+						<div class="col-lg-5 col-md-5 col-sm-5 ipad_img_in" data-appear-top-offset="-200" data-animated="fadeInRight">
+							<img class="ipad_img1" src="images/img1.png" alt="" />
+						</div>
+					</div> --><!-- //ROW -->
+				</div><!-- //CONTAINER -->
+			</div><!-- //MULTI PURPOSE -->
+		</section><!-- //ABOUT -->
+		
+		
+		<!-- PROJECTS -->
+		<section id="projects" class="padbot20">
+		
+			<!-- CONTAINER -->
+			<div class="container">
+				<h2><b>了解</b>更多</h2>
+			</div><!-- //CONTAINER -->
+			
+				
+			<div class="projects-wrapper" data-appear-top-offset="-200" data-animated="fadeInUp">
+				<!-- PROJECTS SLIDER -->
+				<div class="owl-demo owl-carousel projects_slider">
+					
+					<!-- work1 -->
+					<div class="item">
+						<div class="work_item">
+							<div class="work_img">
+								<img src="images/works/1.jpg" alt="" />
+								<a class="zoom" href="images/works/1.jpg" rel="prettyPhoto[portfolio1]" ></a>
+							</div>
+							<div class="work_description">
+								<div class="work_descr_cont">
+									<a href="brand-04.html" >认识总裁</a>
+									<span>03 June, 2020</span>
 								</div>
-								<div class="control-group">
-									<div class="controls">
-										<input type="email" class="form-control" placeholder="邮箱" id="email" required data-validation-required-message="Please enter your email" />
-									</div>
+							</div>
+						</div>
+					</div><!-- //work1 -->
+					
+					<!-- work2 -->
+					<div class="item">
+						<div class="work_item">
+							<div class="work_img">
+								<img src="images/works/2.jpg" alt="" />
+								<a class="zoom" href="images/works/2-2.jpg" rel="prettyPhoto[portfolio1]" ></a>
+							</div>
+							<div class="work_description">
+								<div class="work_descr_cont">
+									<a href="SELAVIE.html" >SELAVIE系列</a>
+									<span>17 March, 2019</span>
 								</div>
+							</div>
+						</div>
+					</div><!-- //work2 -->
+					
+					<!-- work3 -->
+					<div class="item">
+						<div class="work_item">
+							<div class="work_img">
+								<img src="images/works/3.jpg" alt="" />
+								<a class="zoom" href="images/works/3.jpg" rel="prettyPhoto[portfolio1]" ></a>
+							</div>
+							<div class="work_description">
+								<div class="work_descr_cont">
+									<a href="about-03.html" >权威奖项</a>
+									<span>31 July, 2020</span>
+								</div>
+							</div>
+						</div>
+					</div><!-- //work3 -->
+					
+					<!-- work4 -->
+					<div class="item">
+						<div class="work_item">
+							<div class="work_img">
+								<img src="images/works/4.jpg" alt="" />
+								<a class="zoom" href="images/works/4.jpg" rel="prettyPhoto[portfolio1]" ></a>
+							</div>
+							<div class="work_description">
+								<div class="work_descr_cont">
+									<a href="about-02.html" >高端论坛</a>
+									<span>26 October, 2020</span>
+								</div>
+							</div>
+						</div>
+					</div><!-- //work4 -->
+					
+					<!-- work5 -->
+			<!-- 		<div class="item">
+						<div class="work_item">
+							<div class="work_img">
+								<img src="images/works/5.jpg" alt="" />
+								<a class="zoom" href="images/works/5.jpg" rel="prettyPhoto[portfolio1]" ></a>
+							</div>
+							<div class="work_description">
+								<div class="work_descr_cont">
+									<a href="portfolio-post.html" >Ginger Beast</a>
+									<span>17 March, 2041</span>
+								</div>
+							</div>
+						</div>
+					</div> --><!-- //work5 -->
+					
+					<!-- work6 -->
+				<!-- 	<div class="item">
+						<div class="work_item">
+							<div class="work_img">
+								<img src="images/works/6.jpg" alt="" />
+								<a class="zoom" href="images/works/6.jpg" rel="prettyPhoto[portfolio1]" ></a>
+							</div>
+							<div class="work_description">
+								<div class="work_descr_cont">
+									<a href="portfolio-post.html" >Ginger Beast</a>
+									<span>17 March, 2041</span>
+								</div>
+							</div>
+						</div>
+					</div> --><!-- //work6 -->
+					
+					<!-- work7 -->
+				<!-- 	<div class="item">
+						<div class="work_item">
+							<div class="work_img">
+								<img src="images/works/7.jpg" alt="" />
+								<a class="zoom" href="images/works/7.jpg" rel="prettyPhoto[portfolio1]" ></a>
+							</div>
+							<div class="work_description">
+								<div class="work_descr_cont">
+									<a href="portfolio-post.html" >Ginger Beast</a>
+									<span>17 March, 2041</span>
+								</div>
+							</div>
+						</div>
+					</div> --><!-- //work7 -->
+				</div><!-- //PROJECTS SLIDER -->
+			</div>
+			
+		
+		</section><!-- //PROJECTS -->
+		
+		<!-- PROJECTS -->
 
-								<div class="control-group">
-									<div class="controls">
-										<textarea rows="10" cols="100" class="form-control" placeholder="留言" id="message" required data-validation-required-message="Please enter your message" minlength="5" data-validation-minlength-message="Min 5 characters" maxlength="999" style="resize:none"></textarea>
-									</div>
-								</div>
-								<div id="success"> </div>
-								<!-- For success/fail messages -->
-								<button type="submit" class="btn btn-primary pull-right">发送</button><br />
+	</div><!-- //PAGE -->
+	
+	<!-- CONTACTS -->
+	<section id="contacts">
+	</section><!-- //CONTACTS -->
+	
+	<!-- FOOTER -->
+	<footer>
+			
+		<!-- CONTAINER -->
+		<div class="container">
+			
+			<!-- ROW -->
+			<div class="row" data-appear-top-offset="-200" data-animated="fadeInUp">
+				
+				<div class="col-lg-4 col-md-4 col-sm-6 padbot30 foot_about_block">
+					<h4><b>关于我们</b></h4>
+					<p>尼尔医康美是一家以进出口贸易、食品、护肤、外护为主打的美业品牌。
+						旗下产品主要聚焦以爱护健康、美丽人士为主，用自主研发及尼尔科技创新作为核心竞争力。
+						提供品质的产品需求，满足消费者由内而外，由外而内的感受。
+					</p>
+					<!-- <p>
+						尼尔医康美品牌英文：NICOHEALTHCARE .品牌创立于2010年。主要做具有营业执照的实体店加盟为导向，以最佳的服务，感受品牌带来的服务体验。
+					</p>
+					<p>
+						尼尔医康美位于中国广州核心CBD。拥有专业的研发人员，自主生产的能力，品牌策划能力，口碑强，连续12年荣获中国美业最具影响力品牌。 
+					</p> -->
+					<p>
+						时至今日，尼尔医康美品牌已覆盖全国150多座城市，超10000+加盟专业美学店、健康管理会所，拥有百万忠实用户。
+						  
+					</p>
+					<p>
+						您的满意是我们最大的动力。
+					</p>
+					<!-- <ul class="social">
+						<li><a href="javascript:void(0);" ><i class="fa fa-twitter"></i></a></li>
+						<li><a href="javascript:void(0);" ><i class="fa fa-facebook"></i></a></li>
+						<li><a href="javascript:void(0);" ><i class="fa fa-google-plus"></i></a></li>
+						<li><a href="javascript:void(0);" ><i class="fa fa-pinterest-square"></i></a></li>
+						<li><a href="javascript:void(0);" ><i class="map_show fa fa-map-marker"></i></a></li>
+					</ul> -->
+				</div>
+				
+				<div class="col-lg-4 col-md-4 col-sm-6 padbot30">
+					<h4><b>关注我们</b></h4>
+					<div class="recent_posts_small clearfix">
+						<div class="post_item_img_small">
+							<img src="nico/weixin-img-01.jpg" alt="" />
+						</div>
+						<div class="post_item_content_small">
+							<a class="title" href="blog.html" >尼尔医康美NICOHEALTHCARE官方</a>
+							<ul class="post_item_inf_small">
+								<li></li>
+							</ul>
+						</div>
+					</div>
+					<div class="recent_posts_small clearfix">
+						<div class="post_item_img_small">
+							<img src="nico/weixin-img-02.jpg" alt="" />
+						</div>
+						<div class="post_item_content_small">
+							<a class="title" href="blog.html" >尼尔医康美天天刊</a>
+							<ul class="post_item_inf_small">
+								<li></li>
+							</ul>
+						</div>
+					</div>
+				</div>
+				
+				
+				<div class="respond_clear"></div>
+				
+				<div class="col-lg-4 col-md-4 padbot30">
+					<h4><b>联系我们</b></h4>
+					<a>
+						广东省广州市天河区珠江新城环球都会704
+					</a>
+					<!-- CONTACT FORM -->
+				<!-- 	<div class="span9 contact_form">
+						<div id="note"></div>
+						<div id="fields">
+							<form id="contact-form-face" class="clearfix" action="#">
+								<input type="text" name="name" value="Name" onFocus="if (this.value == 'Name') this.value = '';" onBlur="if (this.value == '') this.value = 'Name';" />
+								<textarea name="message" onFocus="if (this.value == 'Message') this.value = '';" onBlur="if (this.value == '') this.value = 'Message';">Message</textarea>
+								<input class="contact_btn" type="submit" value="Send message" />
 							</form>
 						</div>
-					</div>
-				</section>
-			</div>
-			<div class="container">
-				<div class="footer_bottom">
-					<span>&copy; 2017-LinLiuXun
-    		<a target="_blank" href="javascript:;">
-    			个人学习网站
-    		</a>
-    		<a target="_blank" href="javascript:;">    			
-    			</a>html作品
-    	</span>
+					</div --><!-- //CONTACT FORM -->
 				</div>
-			</div>
-		</footer>
-
-		<script type="text/javascript" src="js/jquery-1.11.0.min.js"></script>
-		<script type="text/javascript" src="js/bootstrap.min.js"></script>
-		<script type="text/javascript" src="js/jquery-scrolltofixed.js"></script>
-		<script type="text/javascript" src="js/jquery.nav.js"></script>
-		<script type="text/javascript" src="js/jquery.easing.1.3.js"></script>
-		<script type="text/javascript" src="js/jquery.isotope.js"></script>
-		<script src="js/fancybox/jquery.fancybox.pack.js" type="text/javascript"></script>
-		<script type="text/javascript" src="js/wow.js"></script>
-		<script src="contact/jqBootstrapValidation.js"></script>
-		<script src="contact/contact_me.js"></script>
-		<script type="text/javascript" src="js/custom.js"></script>
-
-	</body>
-
+				
+				
+				
+				
+				
+				
+				
+				
+				
+				
+				
+			</div><!-- //ROW -->
+		</div><!-- //CONTAINER -->
+	</footer><!-- //FOOTER -->
+	
+</div>
+</body>
 </html>
