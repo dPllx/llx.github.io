@@ -1,0 +1,79 @@
+{
+  "id": "",
+  "name": "",
+  "font_family": "iconfont",
+  "css_prefix_text": "icon-",
+  "description": "",
+  "glyphs": [
+    {
+      "icon_id": "1069063",
+      "name": "针剂",
+      "font_class": "zhenji",
+      "unicode": "e64a",
+      "unicode_decimal": 58954
+    },
+    {
+      "icon_id": "1194516",
+      "name": "保健食品",
+      "font_class": "baojianshipin",
+      "unicode": "e88e",
+      "unicode_decimal": 59534
+    },
+    {
+      "icon_id": "1507953",
+      "name": "瓶子",
+      "font_class": "pingzi",
+      "unicode": "e608",
+      "unicode_decimal": 58888
+    },
+    {
+      "icon_id": "3900514",
+      "name": "针筒",
+      "font_class": "zt",
+      "unicode": "e60c",
+      "unicode_decimal": 58892
+    },
+    {
+      "icon_id": "5551476",
+      "name": "皇冠",
+      "font_class": "huangguan",
+      "unicode": "e659",
+      "unicode_decimal": 58969
+    },
+    {
+      "icon_id": "6431132",
+      "name": "皇冠",
+      "font_class": "huangguan1",
+      "unicode": "e6c4",
+      "unicode_decimal": 59076
+    },
+    {
+      "icon_id": "6637618",
+      "name": "瓶子",
+      "font_class": "pingzi1",
+      "unicode": "e60a",
+      "unicode_decimal": 58890
+    },
+    {
+      "icon_id": "11447284",
+      "name": "皇冠 冠军",
+      "font_class": "huangguan-line",
+      "unicode": "e502",
+      "unicode_decimal": 58626
+    },
+    {
+      "icon_id": "22036114",
+      "name": "针剂",
+      "font_class": "zhenji1",
+      "unicode": "e609",
+      "unicode_decimal": 58889
+    },
+    {
+      "icon_id": "22774352",
+      "name": "nico-logo",
+      "font_class": "nico-logo",
+      "unicode": "e601",
+      "unicode_decimal": 58881
+    }
+  ]
+}
