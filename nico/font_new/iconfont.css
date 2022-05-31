@@ -359,15 +359,28 @@
   	}
 }
 
-
+.nico-bottom{
+	color: #fff;
+	margin: 0 auto;
+	text-align: center;
+	
+}
+.nico-bottom a{
+	color: #fff;
+	margin: 0 0 5px;
+}
+.nico-bottom p{
+	margin: 0 0 5px;
+}
 
 @media (max-width: 480px) {
-  	.col-nico{
-	width: 85%;	
+  	.nico-width-01{
+	width: 95%;	
+	margin: 0 0 0 5px;
   	}
   }
   @media (min-width: 767px) {
-  	.col-nico{
-  	width: 30.3333%;
+  	.nico-width-01{
+  	width: 32.3333333%;
   	}
 }
