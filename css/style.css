@@ -380,11 +380,6 @@ header {
 
 
 
-
-
-
-
-
 /*-----------------------------------------------------------------------------------*/
 /*	HOME
 /*-----------------------------------------------------------------------------------*/
@@ -528,6 +523,8 @@ header {
 .cleancode_block .nav-tabs li a.i5 i {background-image:url(../images/i5.png);}
 .cleancode_block .nav-tabs li a.i6 i {background-image:url(../images/i6.png);}
 .cleancode_block .nav-tabs li a.i7 i {background-image:url(../images/i7.png);}
+.cleancode_block .nav-tabs li a.i8 i {background-image:url(../images/i8.png);}
+.cleancode_block .nav-tabs li a.i9 i {background-image:url(../images/i9.png);}
 
 .nav-tabs li a:hover,
 .nav-tabs li a:focus {

@@ -173,7 +173,7 @@
  	color: #555;
  }
  .icon-nico-logo{
- 	color: #f8b500;
+ 	color: #000000;
  }
  
 
@@ -382,5 +382,29 @@
   @media (min-width: 767px) {
   	.nico-width-01{
   	width: 32.3333333%;
+  	}
+}
+
+@media (max-width: 480px) {
+  	.suoxiao{
+	margin:0 0 -54px;
+  	}
+  }
+  @media (min-width: 767px) {
+  	.suoxiao{
+  	}
+}
+
+
+
+
+@media (max-width: 480px) {
+  	.nico-txt-02 p{
+	padding-right:10px;
+  	}
+  }
+  @media (min-width: 767px) {
+  	.nico-txt-02 p{
+	padding-right:70px;
   	}
 }
