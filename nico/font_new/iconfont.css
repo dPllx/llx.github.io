@@ -408,3 +408,13 @@
 	padding-right:70px;
   	}
 }
+@media (max-width: 480px) {
+  	.nico-txt-03 {
+	line-height: 23px;
+	font-size: 15px;
+  	}
+  }
+  @media (min-width: 767px) {
+  	.nico-txt-03 {
+  	}
+}
